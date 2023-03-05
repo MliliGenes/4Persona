@@ -239,6 +239,7 @@ body {
   color: white;
   position: absolute;
   left: 50%;
+  transform: translateX(-50%);
   bottom: 0.5vw;
 }
 
@@ -277,14 +278,12 @@ body {
     height: 30%;
   }
   .article .fa-xmark {
-    top: 3.5vw;
-    left: 50%;
-    transform: translateX(-10%);
+    top: 1.5vw;
   }
   .article .content {
-    margin: 15% 0 5%;
+    margin: 5vw 0 2vw;
   }
   .article .fa-arrow-down {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 }
