@@ -7,7 +7,6 @@
 }
 
 .xxl {
-  position: relative;
   max-width: 100%;
   height: 100vh;
   background-color: #ececec;
@@ -17,16 +16,12 @@
   align-items: center;
 }
 .container {
-  position: absolute;
+  position: relative;
   width: 45%;
   aspect-ratio: 1/1;
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1); */
   background-color: rgb(221, 221, 221);
   border-radius: 2vw;
   overflow: hidden;
-  transition: transform 400ms ease-in-out, opacity 400ms ease-in-out;
   opacity: 1;
   box-shadow: 3.7px 4.4px 11px rgba(0, 0, 0, 0.014),
     8.8px 10.6px 22px rgba(0, 0, 0, 0.02),
@@ -34,6 +29,8 @@
     29.5px 35.5px 50.6px rgba(0, 0, 0, 0.03),
     55.1px 66.4px 74.9px rgba(0, 0, 0, 0.036),
     132px 159px 112px rgba(0, 0, 0, 0.05);
+  transform: scale(1);
+  transition: transform 800ms ease-in-out, opacity 700ms ease-in-out;
 }
 
 .container .persona {
@@ -52,7 +49,6 @@
   gap: 1vw;
   overflow: hidden;
   user-select: none;
-  transform: scale(1);
 }
 
 .container:hover > .persona {
@@ -213,9 +209,9 @@
 }
 
 .deactive {
-  z-index: -1;
   opacity: 0;
-  transform: translate(-50%, -50%) scale(0);
+  transform: scale(0);
+  transform-origin: center;
 }
 
 .article .content {
@@ -273,6 +269,4 @@
 
 .title:hover h2 {
   text-shadow: 5px 5px 0 rgba(255, 255, 255, 0.25);
-}
-@media only screen and (min-width: 1224px) {
 }
