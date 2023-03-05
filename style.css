@@ -10,16 +10,16 @@ body {
   width: 100%;
   height: 100vh;
   background-color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
 }
 
 .container {
   position: relative;
-  width: 40vw;
+  width: 45%;
   aspect-ratio: 1/1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
   background-color: rgb(221, 221, 221);
   border-radius: 2vw;
   overflow: hidden;
@@ -128,10 +128,14 @@ body {
 }
 
 .article {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  display: none;
   border-radius: 2vw;
   position: absolute;
-  width: 85vw;
-  height: 80vh;
+  width: 90%;
+  height: 90%;
   opacity: 0;
   transition: transform 900ms ease-in-out, opacity 900ms ease-in-out;
   display: flex;
@@ -146,27 +150,27 @@ body {
 }
 
 .article-A {
-  transform: translate(-200%, -200%);
+  transform: translate(-250%, -250%);
   background-image: linear-gradient(60deg, #f29b5a, #fcbe94);
 }
 
 .article-B {
-  transform: translate(200%, -200%);
+  transform: translate(250%, -250%);
   background-image: linear-gradient(60deg, #5ac0df, #9ed6ea);
 }
 
 .article-C {
-  transform: translate(200%, 200%);
+  transform: translate(250%, 250%);
   background-image: linear-gradient(60deg, #42b092, #8dcdb8);
 }
 
 .article-D {
-  transform: translate(-200%, 200%);
+  transform: translate(-250%, 250%);
   background-image: linear-gradient(60deg, #b773d5, #d3a5e5);
 }
 
 .article-X {
-  transform: translateY(200%);
+  transform: translate(-50%, 250%);
   background-image: linear-gradient(60deg, #dc2d16, #f7876c);
 }
 
@@ -176,7 +180,7 @@ body {
   position: absolute;
   top: 3.5vw;
   right: 4vw;
-  font-size: 2em;
+  font-size: 5vw;
   color: white;
   transition: all ease 200ms;
 }
@@ -199,13 +203,16 @@ body {
 .active {
   z-index: 10;
   opacity: 1;
-  transform: translate(0%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
 }
 
 .deactive {
   z-index: -1;
   opacity: 0;
-  transform: scale(0);
+  transform: translate(-50%, -50%) scale(0);
 }
 
 .article .content {
@@ -264,26 +271,5 @@ body {
 .title:hover h2 {
   text-shadow: 5px 5px 0 rgba(255, 255, 255, 0.25);
 }
-
-@media screen and (max-width: 800px) {
-  .container {
-    width: 80%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-  }
-  .container .persona {
-    position: static;
-    width: 100%;
-    height: 30%;
-  }
-  .article .fa-xmark {
-    top: 1.5vw;
-  }
-  .article .content {
-    margin: 5vw 0 2vw;
-  }
-  .article .fa-arrow-down {
-    font-size: 3vw;
-  }
+@media only screen and (min-width: 1224px) {
 }
