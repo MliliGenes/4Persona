@@ -30,6 +30,7 @@ body {
   background-color: white;
   color: #d8d8d8;
   border-radius: 0.5vw;
+  font-size: 1vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,7 +70,7 @@ aside {
 }
 .logo div .line {
   height: 20vh;
-  width: 2px;
+  height: 0.1vw;
   background-color: #d8d8d8;
 }
 .footer {
@@ -86,7 +87,7 @@ aside {
   list-style: none;
   transform: rotate(90deg);
   color: #d8d8d8;
-  gap: 3vh;
+  gap: 3vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -99,6 +100,7 @@ aside {
   align-items: center;
   letter-spacing: 0.2vh;
   cursor: pointer;
+  font-size: 1vw;
 }
 
 .footer ul li:hover {
@@ -107,7 +109,7 @@ aside {
 
 .footer ul .line {
   width: 20vh;
-  height: 2px;
+  height: 0.1vw;
   background-color: #d8d8d8;
 }
 .xxl {
