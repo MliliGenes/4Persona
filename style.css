@@ -6,20 +6,23 @@
   box-sizing: border-box;
 }
 
-body {
-  width: 100%;
-  height: 100vh;
-  background-color: rgb(255, 255, 255);
-  overflow: hidden;
-}
-
-.container {
+.xxl {
   position: relative;
+  max-width: 100%;
+  height: 100vh;
+  background-color: #ececec;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  position: absolute;
   width: 45%;
   aspect-ratio: 1/1;
-  top: 50%;
+  /* top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1); */
   background-color: rgb(221, 221, 221);
   border-radius: 2vw;
   overflow: hidden;
