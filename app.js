@@ -29,9 +29,22 @@ articles.forEach((art) => {
 });
 
 window.addEventListener("keydown", (e) => {
-  let currentArticle = document.querySelector(".active");
-  if (e.key == "Escape") {
-    currentArticle.classList.remove("active");
-    container.classList.remove("deactive");
+  if (container.classList.contains("deactive")) {
+    let currentArticle = document.querySelector(".active");
+    if (e.key == "Escape") {
+      currentArticle.classList.remove("active");
+      container.classList.remove("deactive");
+    }
   }
+  // else {
+  //   const targetArticle = document.querySelector(
+  //     `.article[data-key="${e.key}"]`
+  //   );
+  //   console.log(targetArticle);
+  //   articles.forEach((art) => {
+  //     art.classList.remove("active");
+  //   });
+  //   targetArticle.classList.add("active");
+  //   container.classList.add("deactive");
+  // }
 });
