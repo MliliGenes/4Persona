@@ -1,0 +1,277 @@
+@import url("https://fonts.cdnfonts.com/css/fearce");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  width: 40vw;
+  aspect-ratio: 1/1;
+  background-color: rgb(221, 221, 221);
+  border-radius: 2vw;
+  overflow: hidden;
+  transition: all 400ms ease;
+  opacity: 1;
+  box-shadow: 3.7px 4.4px 11px rgba(0, 0, 0, 0.014),
+    8.8px 10.6px 22px rgba(0, 0, 0, 0.02),
+    16.5px 19.9px 34.3px rgba(0, 0, 0, 0.025),
+    29.5px 35.5px 50.6px rgba(0, 0, 0, 0.03),
+    55.1px 66.4px 74.9px rgba(0, 0, 0, 0.036),
+    132px 159px 112px rgba(0, 0, 0, 0.05);
+}
+
+.container .persona {
+  position: absolute;
+  z-index: 1;
+  background-position: top right;
+  background-size: 300%;
+  transition: 600ms ease opacity, 800ms ease-in background-position,
+    500ms ease-in-out trasform;
+  font-family: "Fearce", sans-serif;
+  color: azure;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  overflow: hidden;
+  user-select: none;
+  transform: scale(1);
+}
+
+.container:hover > .persona {
+  opacity: 0.3;
+}
+
+.container:hover > .persona:hover {
+  z-index: 10;
+  opacity: 1;
+}
+
+.container .persona:hover {
+  background-position: top left;
+}
+
+.container .persona-A {
+  top: 0;
+  left: 0;
+  width: 35%;
+  height: 65%;
+  background-image: linear-gradient(60deg, #f29b5a, #fcbe94);
+}
+
+.container .persona-B {
+  top: 0;
+  right: 0;
+  width: 65%;
+  height: 35%;
+  background-image: linear-gradient(60deg, #5ac0df, #9ed6ea);
+}
+
+.container .persona-C {
+  bottom: 0;
+  right: 0;
+  width: 35%;
+  height: 65%;
+  background-image: linear-gradient(60deg, #42b092, #8dcdb8);
+}
+
+.container .persona-D {
+  bottom: 0;
+  left: 0;
+  width: 65%;
+  height: 35%;
+  background-image: linear-gradient(60deg, #b773d5, #d3a5e5);
+}
+
+.container .persona-X {
+  top: 35%;
+  left: 35%;
+  width: 30%;
+  height: 30%;
+  background-image: linear-gradient(60deg, #dc2d16, #f7876c);
+}
+
+.container .persona span {
+  font-size: 1vw;
+  letter-spacing: 0.5em;
+}
+
+.container .persona h1 {
+  cursor: pointer;
+  font-size: 4vw;
+  transition: all ease 200ms;
+}
+
+.container .persona h1:hover {
+  text-shadow: 5px 5px 0 rgba(255, 255, 255, 0.25);
+}
+
+.container .persona img {
+  z-index: -1;
+  position: absolute;
+  width: 10vw;
+  opacity: 0.2;
+}
+
+.article {
+  border-radius: 2vw;
+  position: absolute;
+  width: 85vw;
+  height: 80vh;
+  opacity: 0;
+  transition: all 900ms ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3.7px 4.4px 11px rgba(0, 0, 0, 0.014),
+    8.8px 10.6px 22px rgba(0, 0, 0, 0.02),
+    16.5px 19.9px 34.3px rgba(0, 0, 0, 0.025),
+    29.5px 35.5px 50.6px rgba(0, 0, 0, 0.03),
+    55.1px 66.4px 74.9px rgba(0, 0, 0, 0.036),
+    132px 159px 112px rgba(0, 0, 0, 0.05);
+}
+
+.article-A {
+  transform: translate(-200%, -200%);
+  background-image: linear-gradient(60deg, #f29b5a, #fcbe94);
+}
+
+.article-B {
+  transform: translate(200%, -200%);
+  background-image: linear-gradient(60deg, #5ac0df, #9ed6ea);
+}
+
+.article-C {
+  transform: translate(200%, 200%);
+  background-image: linear-gradient(60deg, #42b092, #8dcdb8);
+}
+
+.article-D {
+  transform: translate(-200%, 200%);
+  background-image: linear-gradient(60deg, #b773d5, #d3a5e5);
+}
+
+.article-X {
+  transform: translateY(200%);
+  background-image: linear-gradient(60deg, #dc2d16, #f7876c);
+}
+
+.article .fa-xmark {
+  z-index: 10;
+  cursor: pointer;
+  position: absolute;
+  top: 3.5vw;
+  right: 4vw;
+  font-size: 2em;
+  color: white;
+  transition: all ease 200ms;
+}
+
+.article .fa-xmark:hover {
+  text-shadow: 4px 3px 0 rgba(255, 255, 255, 0.25);
+}
+
+.article img {
+  user-select: none;
+  z-index: -1;
+  position: absolute;
+  opacity: 0.2;
+  width: 20vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.active {
+  z-index: 10;
+  opacity: 1;
+  transform: translate(0%);
+}
+
+.deactive {
+  z-index: -1;
+  opacity: 0;
+  transform: scale(0);
+}
+
+/* .article .fade {
+  z-index: 5;
+  position: absolute;
+  inset: 2vw;
+  background-image: linear-gradient(
+    180deg,
+    transparent 80%,
+    rgba(255, 255, 255, 0.25)
+  );
+  border-radius: 1vw;
+} */
+
+.article .content {
+  font-family: "Fearce", sans-serif;
+  color: white;
+  position: absolute;
+  inset: 2vw;
+  border-radius: 1vw;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.05);
+  padding: 2vw 7vw;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 20%;
+}
+
+.article .content::-webkit-scrollbar {
+  display: none;
+}
+
+.article .content .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2vw;
+}
+
+.article .fa-arrow-down {
+  font-size: 1vw;
+  color: white;
+  position: absolute;
+  left: 50%;
+  bottom: 0.5vw;
+}
+
+.article .content .title span {
+  font-size: 1vw;
+  padding: 0.5vw 2vw;
+  border: 2px solid white;
+}
+
+.article .content .title .line {
+  position: relative;
+  flex: 3;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+}
+
+.article .content .title h2 {
+  font-size: 4vw;
+  transition: all 300ms ease;
+}
+
+.title:hover h2 {
+  text-shadow: 5px 5px 0 rgba(255, 255, 255, 0.25);
+}
