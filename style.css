@@ -5,7 +5,18 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body {
+  overflow: hidden;
+  animation: tada 1200ms ease-in 100ms 1 forwards;
+}
+@keyframes tada {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .xxl {
   max-width: 100%;
   height: 100vh;
@@ -127,12 +138,11 @@
 }
 
 .article {
-  position: relative;
-  top: 50%;
-  left: 50%;
   display: none;
   border-radius: 2vw;
   position: absolute;
+  top: 50%;
+  left: 50%;
   width: 90%;
   height: 90%;
   opacity: 0;
@@ -149,27 +159,27 @@
 }
 
 .article-A {
-  transform: translate(-250%, -250%);
+  transform: translate(-150%, -150%);
   background-image: linear-gradient(60deg, #f29b5a, #fcbe94);
 }
 
 .article-B {
-  transform: translate(250%, -250%);
+  transform: translate(150%, -150%);
   background-image: linear-gradient(60deg, #5ac0df, #9ed6ea);
 }
 
 .article-C {
-  transform: translate(250%, 250%);
+  transform: translate(150%, 150%);
   background-image: linear-gradient(60deg, #42b092, #8dcdb8);
 }
 
 .article-D {
-  transform: translate(-250%, 250%);
+  transform: translate(-150%, 150%);
   background-image: linear-gradient(60deg, #b773d5, #d3a5e5);
 }
 
 .article-X {
-  transform: translate(-50%, 250%);
+  transform: translate(-50%, 150%);
   background-image: linear-gradient(60deg, #dc2d16, #f7876c);
 }
 
