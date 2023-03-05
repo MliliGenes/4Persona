@@ -87,7 +87,7 @@ aside {
   list-style: none;
   transform: rotate(90deg);
   color: #d8d8d8;
-  gap: 3vw;
+  gap: 1.5vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
