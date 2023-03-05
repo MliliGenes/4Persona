@@ -208,18 +208,6 @@ body {
   transform: scale(0);
 }
 
-/* .article .fade {
-  z-index: 5;
-  position: absolute;
-  inset: 2vw;
-  background-image: linear-gradient(
-    180deg,
-    transparent 80%,
-    rgba(255, 255, 255, 0.25)
-  );
-  border-radius: 1vw;
-} */
-
 .article .content {
   font-family: "Fearce", sans-serif;
   color: white;
@@ -274,4 +262,29 @@ body {
 
 .title:hover h2 {
   text-shadow: 5px 5px 0 rgba(255, 255, 255, 0.25);
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  .container .persona {
+    position: static;
+    width: 100%;
+    height: 30%;
+  }
+  .article .fa-xmark {
+    top: 3.5vw;
+    left: 50%;
+    transform: translateX(-10%);
+  }
+  .article .content {
+    margin: 15% 0 5%;
+  }
+  .article .fa-arrow-down {
+    font-size: 4vw;
+  }
 }
