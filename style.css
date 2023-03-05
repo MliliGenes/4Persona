@@ -280,3 +280,31 @@
 .title:hover h2 {
   text-shadow: 5px 5px 0 rgba(255, 255, 255, 0.25);
 }
+
+@media only screen and (max-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 90%;
+  }
+  .container .persona {
+    position: static;
+    flex: 1;
+    height: 80px;
+    width: 100%;
+  }
+  .container .persona img {
+    z-index: -1;
+    position: absolute;
+    width: 20vw;
+    opacity: 0.2;
+  }
+  .container .persona span {
+    font-size: 2vw;
+  }
+
+  .container .persona h1 {
+    font-size: 8vw;
+  }
+}
