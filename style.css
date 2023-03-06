@@ -1,5 +1,5 @@
 @import url("https://fonts.cdnfonts.com/css/fearce");
-
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@200&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -14,10 +14,62 @@
     opacity: 1;
   }
 }
+
 body {
   position: relative;
   display: flex;
+  overflow: hidden;
 }
+.cursor {
+  z-index: 200;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #bdbdbd;
+  border-radius: 50%;
+  pointer-events: none;
+  position: absolute;
+  transition: 100ms ease all;
+  animation: anime1 500ms infinite alternate ease-out;
+}
+.cursor::after {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 10px solid rgb(255, 255, 255);
+  opacity: 0.2;
+  top: -15px;
+  left: -15px;
+  animation: anime1 750ms infinite alternate ease-out;
+}
+
+.cursor::before {
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #000000;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+}
+
+@keyframes anime1 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+.clicked {
+  border: 2px solid #ff2020;
+}
+
 .about {
   position: absolute;
   cursor: pointer;
@@ -341,10 +393,13 @@ aside {
 }
 
 .article .content .title {
+  /* position: sticky; */
+  top: 0%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2vw;
+  backdrop-filter: blur(2px);
 }
 
 .article .fa-arrow-down {
@@ -378,6 +433,63 @@ aside {
   text-shadow: 5px 5px 0 rgba(255, 255, 255, 0.25);
 }
 
+.article .content .text {
+  line-height: 1.5;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 0 0 2% 0;
+}
+.article .content .text h4 {
+  background-color: rgba(255, 255, 255, 0.13);
+  padding: 1em;
+  width: 100%;
+  text-align: center;
+  font-size: 1.8em;
+  letter-spacing: 0.05vw;
+}
+
+.article .content .text ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  gap: 0.5em;
+  font-size: 1.6em;
+  letter-spacing: 0.03em;
+  background-color: rgba(255, 255, 255, 0.13);
+  width: 100%;
+  font-family: "Bebas Neue", cursive;
+}
+.article .content .text ul li {
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.445);
+}
+.article .content .text p {
+  width: 80%;
+  font-size: 1.8em;
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+}
+.article .content .text .diff {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.article .content .text .diff div {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.article .content .text .diff div h5 {
+  text-align: center;
+  font-size: 1.2em;
+}
 @media only screen and (max-width: 800px) {
   body {
     flex-direction: column;
@@ -450,5 +562,21 @@ aside {
 
   .container .persona h1 {
     font-size: 8vw;
+  }
+  .article .content .text h4 {
+    font-size: 0.9em;
+    letter-spacing: 0.05vw;
+  }
+
+  .article .content .text ul {
+    font-size: 0.8em;
+    letter-spacing: 0.03em;
+  }
+  .article .content .text p {
+    font-size: 0.8em;
+  }
+
+  .article .content .text .diff div h5 {
+    font-size: 0.5em;
   }
 }
