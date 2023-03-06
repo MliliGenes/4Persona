@@ -20,24 +20,26 @@ body {
   display: flex;
   overflow: hidden;
 }
+
 .cursor {
   z-index: 200;
   width: 30px;
   height: 30px;
-  border: 2px solid #bdbdbd;
+  border: 2px solid #fffef6;
   border-radius: 50%;
   pointer-events: none;
   position: absolute;
   transition: 100ms ease all;
   animation: anime1 500ms infinite alternate ease-out;
 }
+
 .cursor::after {
   position: absolute;
   content: "";
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  border: 10px solid rgb(255, 255, 255);
+  border: 10px solid rgb(128, 128, 128);
   opacity: 0.2;
   top: -15px;
   left: -15px;
@@ -202,7 +204,7 @@ aside {
   transition: 600ms ease opacity, 800ms ease-in background-position,
     500ms ease-in-out trasform;
   font-family: "Fearce", sans-serif;
-  color: azure;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
