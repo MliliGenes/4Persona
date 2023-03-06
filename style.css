@@ -19,9 +19,9 @@ body {
   display: flex;
 }
 .about {
+  position: absolute;
   cursor: pointer;
   z-index: 100;
-  position: absolute;
   top: 5vw;
   left: 5vw;
   transform: rotate(90deg);
@@ -383,9 +383,10 @@ aside {
     flex-direction: column;
   }
   .about {
-    top: 16.2%;
-    left: -1.2%;
-    transform: rotate(90deg);
+    top: 10%;
+    left: 90%;
+    border-radius: 0;
+    transform: rotate(0deg);
     width: 10vw;
     height: 3.5vh;
     font-size: 1.5vw;
