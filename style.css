@@ -554,7 +554,7 @@ aside {
   .container .persona img {
     z-index: -1;
     position: absolute;
-    width: 20vw;
+    width: 20%;
     opacity: 0.2;
   }
   .container .persona span {
