@@ -3,5 +3,5 @@ const h1 = document.querySelector(".into-title");
 window.addEventListener("load", (e) => {
   setTimeout((e) => {
     intro.classList.add("action");
-  }, 800);
+  }, 1400);
 });
