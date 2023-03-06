@@ -417,6 +417,9 @@ aside {
   .footer ul li {
     font-size: 2vw;
   }
+  .footer ul .line {
+    width: 20vw;
+  }
   .xxl {
     width: 100%;
     height: 85vh;
