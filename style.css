@@ -3,8 +3,8 @@
   src: url(Fearce.ttf);
 }
 @font-face {
-  font-family: "Bebas Neue";
-  src: url(BebasNeue-Regular.ttf);
+  font-family: "saad";
+  src: url(./FreeSans.otf);
 }
 * {
   margin: 0;
@@ -45,6 +45,7 @@ body {
   transform: translateY(-200%);
 }
 .intro h1 {
+  user-select: none;
   font-family: "Fearce", sans-serif;
   font-size: 5vw;
   font-weight: 100;
@@ -77,7 +78,7 @@ body {
   position: absolute;
   transition: 10ms linear all;
   animation: anime1 1500ms infinite alternate ease;
-  box-shadow: 0 0 0 8px rgba(129, 129, 129, 0.25);
+  /* box-shadow: 0 0 0 8px rgba(129, 129, 129, 0.25); */
 }
 
 .cursor::after {
@@ -506,11 +507,10 @@ aside {
   padding: 1em;
   gap: 0.5em;
   font-size: 1.6em;
-  letter-spacing: 0.03em;
   background-color: rgba(255, 255, 255, 0.13);
   backdrop-filter: blur(2px);
   width: 100%;
-  font-family: "Bebas Neue", cursive;
+  font-family: "saad", cursive;
 }
 .article .content .text ul li {
   border-bottom: 1px dashed rgba(255, 255, 255, 0.8);
@@ -521,7 +521,7 @@ aside {
   width: 80%;
   font-size: 1.8em;
   text-align: center;
-  font-family: "Bebas Neue", cursive;
+  font-family: "saad", cursive;
 }
 .article .content .text .diff {
   width: 100%;
@@ -529,6 +529,7 @@ aside {
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 10%;
+  margin-bottom: 10%;
 }
 .article .content .text .diff div {
   flex: 1;
@@ -542,7 +543,8 @@ aside {
   width: 100%;
   max-height: fit-content;
   text-align: center;
-  font-size: 1em;
+  font-size: 1.1em;
+  border-bottom: 1px solid white;
 }
 .article .content .type-x {
   margin-top: 4%;
