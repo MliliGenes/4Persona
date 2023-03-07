@@ -113,7 +113,7 @@ body {
   z-index: 100;
   top: 10%;
   left: 4%;
-  transform: rotate(90deg);
+  transform: rotate(-90deg);
   width: 7vw;
   height: 4vh;
   background-color: white;
@@ -141,7 +141,7 @@ aside {
   overflow: hidden;
 }
 .logo div {
-  transform: rotate(90deg);
+  transform: rotate(-90deg);
   display: flex;
   justify-content: center;
   align-items: center;
