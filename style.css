@@ -67,8 +67,6 @@ body {
 }
 .cursor {
   transform: translateX(-50%);
-  top: 10%;
-  left: 50%;
   z-index: 200;
   width: 30px;
   height: 30px;
