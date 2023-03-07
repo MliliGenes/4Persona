@@ -474,7 +474,7 @@ aside {
   padding: 1em;
   width: 100%;
   text-align: center;
-  font-size: 1.8em;
+  font-size: 1.2em;
   letter-spacing: 0.05vw;
 }
 
@@ -506,7 +506,7 @@ aside {
 .article .content .text .diff {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .article .content .text .diff div {
   width: 40%;
@@ -516,9 +516,8 @@ aside {
   align-items: center;
 }
 .article .content .text .diff div .kdot {
-  width: 100%;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 @media only screen and (max-width: 800px) {
   body {
