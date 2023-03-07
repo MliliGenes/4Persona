@@ -472,9 +472,10 @@ aside {
   backdrop-filter: blur(2px);
   background-color: rgba(255, 255, 255, 0.13);
   padding: 1em;
+  font-weight: 900;
   width: 100%;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.5em;
   letter-spacing: 0.05vw;
 }
 
@@ -506,10 +507,12 @@ aside {
 .article .content .text .diff {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10%;
 }
 .article .content .text .diff div {
-  width: 40%;
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -518,6 +521,7 @@ aside {
 .article .content .text .diff div .kdot {
   width: 100%;
   text-align: center;
+  font-weight: 900;
   font-size: 1em;
 }
 @media only screen and (max-width: 800px) {
