@@ -525,6 +525,9 @@ aside {
   font-size: 1em;
 }
 @media only screen and (max-width: 800px) {
+  .cursor {
+    display: none;
+  }
   body {
     flex-direction: column;
   }
