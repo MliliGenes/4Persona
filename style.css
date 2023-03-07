@@ -515,7 +515,8 @@ aside {
   gap: 20px;
   align-items: center;
 }
-.article .content .text .diff div h5 {
+.article .content .text .diff div .kdot {
+  width: 100%;
   text-align: center;
   font-size: 1.2em;
 }
