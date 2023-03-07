@@ -413,7 +413,7 @@ aside {
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
-  gap: 20%;
+  gap: 8%;
 }
 
 .article .content::-webkit-scrollbar {
