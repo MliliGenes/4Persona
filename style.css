@@ -578,7 +578,7 @@ aside {
   .container .persona img {
     z-index: -1;
     position: absolute;
-    width: 20%;
+    width: 12vh;
     object-fit: cover;
     opacity: 0.2;
   }
