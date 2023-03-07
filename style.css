@@ -544,7 +544,10 @@ aside {
   text-align: center;
   font-size: 1em;
 }
-
+.article .content .type-x {
+  opacity: 1;
+  width: 25vw;
+}
 @media only screen and (max-width: 800px) {
   .cursor {
     display: none;
