@@ -31,6 +31,7 @@ body {
   align-items: center;
   transition: transform 1400ms ease-in;
   transform: translateY(0%);
+  overflow: hidden;
 }
 .action {
   transform: translateY(-200%);
@@ -43,9 +44,19 @@ body {
   color: #d8d8d8;
   background-size: 105%;
   background-position: center;
-  /* transform: translateX(0%); */
+  animation: anime2 1400ms 1 ease forwards;
 }
+@keyframes anime2 {
+  0% {
+    opacity: 0;
+    transform: translate(-100%);
+  }
 
+  100% {
+    opacity: 1;
+    transform: perspective(500px) rotateX(10deg);
+  }
+}
 .cursor {
   z-index: 200;
   width: 30px;
@@ -363,9 +374,9 @@ aside {
   z-index: 10;
   cursor: pointer;
   position: absolute;
-  top: 3.5vw;
+  top: 4vw;
   right: 4vw;
-  font-size: 5vw;
+  font-size: 4.2vw;
   color: white;
   transition: all ease 200ms;
 }
@@ -468,6 +479,7 @@ aside {
   padding: 0 0 2% 0;
 }
 .article .content .text h4 {
+  backdrop-filter: blur(2px);
   background-color: rgba(255, 255, 255, 0.13);
   padding: 1em;
   width: 100%;
@@ -487,6 +499,7 @@ aside {
   font-size: 1.6em;
   letter-spacing: 0.03em;
   background-color: rgba(255, 255, 255, 0.13);
+  backdrop-filter: blur(2px);
   width: 100%;
   font-family: "Bebas Neue", cursive;
 }
