@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Fearce";
-  src: url(Fearce.ttf);
+  src: url(./fonts/Fearce.ttf);
 }
 @font-face {
   font-family: "Bebas Neue";
-  src: url(BebasNeue-Regular.ttf);
+  src: url(./fonts/BebasNeue-Regular.ttf);
 }
 * {
   margin: 0;
@@ -14,7 +14,7 @@
 .cover {
   width: 100%;
   height: 100vh;
-  background-image: url(Dusty.jpeg);
+  background-image: url(./img/Dusty.jpeg);
   background-size: cover;
   pointer-events: none;
   z-index: 1000;
@@ -66,6 +66,9 @@ body {
   }
 }
 .cursor {
+  transform: translateX(-50%);
+  top: 10%;
+  left: 50%;
   z-index: 200;
   width: 30px;
   height: 30px;
@@ -75,8 +78,8 @@ body {
   pointer-events: none;
   position: absolute;
   transition: 10ms linear all;
-  animation: anime1 1500ms infinite alternate ease-out;
-  box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.15);
+  animation: anime1 1500ms infinite alternate ease;
+  box-shadow: 0 0 0 8px rgba(129, 129, 129, 0.25);
 }
 
 .cursor::after {
@@ -104,10 +107,10 @@ body {
 
 @keyframes anime1 {
   0% {
-    transform: scale(1) rotate(0);
+    transform: scale(1);
   }
   100% {
-    transform: scale(0.9) rotate(360deg);
+    transform: scale(0.8);
   }
 }
 
