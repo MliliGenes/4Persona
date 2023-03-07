@@ -160,7 +160,7 @@ aside {
 }
 
 .logo ul .line {
-  width: 20vh;
+  width: 6.8vw;
   height: 0.25vh;
   background-color: #303030;
 }
@@ -555,17 +555,15 @@ aside {
     width: 100%;
     height: 10vh;
   }
-  .logo div {
+  .logo ul {
     gap: 3vw;
     transform: rotate(0deg);
   }
-  .logo div h1 {
-    font-size: 5vw;
+  .logo ul .wu {
+    font-size: 4vw;
   }
-  .logo div .line {
-    width: 20vh;
-    height: 0.1vw;
-    background-color: #d8d8d8;
+  .logo ul .line {
+    width: 40vh;
   }
   .footer {
     width: 100%;
