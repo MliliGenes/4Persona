@@ -1,3 +1,11 @@
+window.oncontextmenu = function () {
+  return false;
+};
+
+document.onkeydown = function (e) {
+  if (window.event.keyCode == 123 || e.button == 2) return false;
+};
+
 const container = document.querySelector(".container");
 
 const personas = document.querySelectorAll(".persona");
@@ -36,31 +44,4 @@ window.addEventListener("keydown", (e) => {
       container.classList.remove("deactive");
     }
   }
-});
-
-window.oncontextmenu = function () {
-  return false;
-};
-
-document.onkeydown = function (e) {
-  if (window.event.keyCode == 123 || e.button == 2) return false;
-};
-
-const cursor = document.querySelector(".cursor");
-window.addEventListener("mousemove", (e) => {
-  cursor.setAttribute(
-    "style",
-    "top : " + (e.pageY - 15) + "px; left: " + (e.pageX - 15) + "px"
-  );
-});
-cursor.addEventListener("click", (e) => {
-  cursor.classList.add("clicked");
-});
-
-const intro = document.querySelector(".intro");
-const h1 = document.querySelector(".into-title");
-window.addEventListener("load", (e) => {
-  setTimeout((e) => {
-    intro.classList.add("action");
-  }, 1400);
 });
