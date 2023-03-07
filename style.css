@@ -508,6 +508,7 @@ aside {
 .article .content .text ul li {
   border-bottom: 1px dashed rgba(255, 255, 255, 0.8);
   text-align: center;
+  width: 100%;
 }
 .article .content .text p {
   width: 80%;
