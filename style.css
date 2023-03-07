@@ -33,7 +33,7 @@ body {
   font-size: 5vw;
   font-weight: 100;
   letter-spacing: 0.5vw;
-  color: #919191;
+  color: #303030;
   background-size: 105%;
   background-position: center;
   animation: anime2 1400ms 1 ease forwards;
@@ -145,14 +145,14 @@ aside {
   font-size: 3vw;
   font-weight: 100;
   letter-spacing: 0.5vw;
-  color: #919191;
+  color: #303030;
   background-size: 105%;
   background-position: center;
 }
 .logo div .line {
   height: 20vh;
   width: 0.1vw;
-  background-color: #919191;
+  background-color: #303030;
 }
 .footer {
   width: 3%;
@@ -167,7 +167,7 @@ aside {
   font-family: "Fearce", sans-serif;
   list-style: none;
   transform: rotate(90deg);
-  color: #919191;
+  color: #303030;
   gap: 1.5vw;
   display: flex;
   justify-content: space-between;
@@ -191,7 +191,7 @@ aside {
 .footer ul .line {
   width: 20vh;
   height: 0.1vw;
-  background-color: #919191;
+  background-color: #303030;
 }
 .xxl {
   position: relative;
