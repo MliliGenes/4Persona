@@ -142,28 +142,29 @@ aside {
   align-items: center;
   overflow: hidden;
 }
-.logo div {
+.logo ul {
+  font-family: "Fearce", sans-serif;
+  list-style: none;
   transform: rotate(-90deg);
+  color: #303030;
+  gap: 1.5vw;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 15vh;
 }
-
-.logo div h1 {
+.logo ul .wu {
   font-family: "Fearce", sans-serif;
   font-size: 3vw;
-  font-weight: 100;
   letter-spacing: 0.5vw;
   color: #303030;
-  background-size: 105%;
-  background-position: center;
 }
-.logo div .line {
-  height: 20vh;
-  width: 0.1vw;
+
+.logo ul .line {
+  width: 20vh;
+  height: 0.25vh;
   background-color: #303030;
 }
+
 .footer {
   width: 3%;
   height: 100vh;
@@ -200,7 +201,7 @@ aside {
 
 .footer ul .line {
   width: 20vh;
-  height: 0.1vw;
+  height: 0.2vh;
   background-color: #303030;
 }
 .xxl {
