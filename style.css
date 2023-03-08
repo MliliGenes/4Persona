@@ -48,7 +48,7 @@ body {
 .intro h1 {
   user-select: none;
   font-family: "Fearce", sans-serif;
-  font-size: 5em;
+  font-size: 5vw;
   letter-spacing: 0.5vw;
   color: #303030;
   animation: anime2 800ms 1 ease forwards;
@@ -56,7 +56,7 @@ body {
 .intro span {
   user-select: none;
   font-family: "Fearce", sans-serif;
-  font-size: 0.6em;
+  font-size: 0.8vw;
   letter-spacing: 0.5vw;
   color: #303030;
   opacity: 0;
@@ -588,6 +588,9 @@ aside {
 @media only screen and (max-width: 800px) {
   .intro h1 {
     font-size: 2em;
+  }
+  .intro span {
+    font-size: 2vw;
   }
   .cursor {
     display: none;
