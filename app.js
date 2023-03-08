@@ -1,10 +1,10 @@
-window.oncontextmenu = function () {
-  return false;
-};
+// window.oncontextmenu = function () {
+//   return false;
+// };
 
-document.onkeydown = function (e) {
-  if (window.event.keyCode == 123 || e.button == 2) return false;
-};
+// document.onkeydown = function (e) {
+//   if (window.event.keyCode == 123 || e.button == 2) return false;
+// };
 
 const container = document.querySelector(".container");
 
