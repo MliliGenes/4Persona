@@ -50,8 +50,9 @@ body {
   font-family: "Fearce", sans-serif;
   font-size: 5vw;
   letter-spacing: 0.5vw;
+  opacity: 0;
   color: #303030;
-  animation: anime2 800ms 1 ease forwards;
+  animation: anime2 1200ms 1 ease forwards;
 }
 .intro span {
   user-select: none;
@@ -61,10 +62,7 @@ body {
   color: #303030;
   opacity: 0;
   transform: translateY(2vw);
-  animation: anime4 800ms 1.5s 1 ease forwards;
-}
-.waiting {
-  animation: anime3 1800ms infinite ease forwards alternate !important;
+  animation: anime3 600ms 1.5s infinite linear alternate;
 }
 
 @keyframes anime2 {
@@ -79,25 +77,13 @@ body {
   }
 }
 
-@keyframes anime4 {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
 @keyframes anime3 {
   0% {
-    opacity: 1;
-    transform: perspective(500px) rotateX(10deg);
+    opacity: 0.2;
   }
 
   100% {
-    opacity: 0.5;
-    transform: perspective(500px) rotateX(10deg);
+    opacity: 1;
   }
 }
 .cursor {
@@ -586,6 +572,9 @@ aside {
   width: 35vw;
 }
 @media only screen and (max-width: 800px) {
+  * {
+    transition: 0s;
+  }
   .intro h1 {
     font-size: 2em;
   }
