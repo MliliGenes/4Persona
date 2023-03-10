@@ -14,18 +14,19 @@
 .cover {
   width: 100%;
   height: 100vh;
-  background-image: url(Dusty.jpeg);
+  background-image: url(texture.jpeg);
   background-size: cover;
   pointer-events: none;
   z-index: 1000;
   position: absolute;
-  mix-blend-mode: soft-light;
-  opacity: 0.8;
+  mix-blend-mode: multiply;
+  opacity: 0.2;
 }
 body {
   position: relative;
   display: flex;
   overflow: hidden;
+  /* cursor: none; */
 }
 .intro {
   z-index: 150;
@@ -68,7 +69,7 @@ body {
 @keyframes anime2 {
   0% {
     opacity: 0;
-    transform: translateX(-200%);
+    transform: translateY(-500%);
   }
 
   100% {
@@ -96,7 +97,7 @@ body {
   background-position: center;
   pointer-events: none;
   position: absolute;
-  transition: 80ms linear top, 80ms linear left, 200ms linear border;
+  transition: 20ms linear top, 20ms linear left, 200ms linear border;
   animation: anime1 1500ms infinite alternate ease;
 }
 .cursor::after {
